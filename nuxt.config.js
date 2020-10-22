@@ -1,10 +1,7 @@
 export default {
-  env: {
-    API_URL: process.env.API_URL || 'http://localhost:3030'
-  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'working-boards',
+    title: 'Working boards',
     meta: [{
         charset: 'utf-8'
       },
@@ -32,6 +29,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    '~/plugins/config',
     '~/plugins/axios',
     '~/plugins/api-inject',
   ],
