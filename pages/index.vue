@@ -1,10 +1,4 @@
-<template>
-  <div class="container">
-    <div>
-      <button @click="getMe">CLick get Me</button>
-    </div>
-  </div>
-</template>
+<template src="./template.html"></template>
 
 <script>
 export default {
@@ -16,3 +10,5 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped src="./style.scss"></style>

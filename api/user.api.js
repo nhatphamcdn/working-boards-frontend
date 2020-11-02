@@ -1,5 +1,5 @@
-export default ($axios) => ({
+export default ($axios, resource) => ({
   me() {
-    return $axios.get(`users/me`);
+    return $axios.get(resource.user.info);
   },
 })

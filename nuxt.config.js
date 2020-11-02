@@ -23,25 +23,23 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
-
+  css: [
+    '@/assets/scss/autoload.scss',
+    '@/assets/scss/base.scss',
+  ],
   router: {},
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '~/plugins/config',
+    '~/plugins/inject',
     '~/plugins/axios',
-    '~/plugins/api-inject',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-  ],
+  buildModules: [],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -59,9 +57,4 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-
-  tailwindcss: {
-    configPath: 'tailwind.config.js',
-    exposeConfig: true
-  },
 }

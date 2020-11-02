@@ -1,9 +1,9 @@
-export default ($axios) => ({
+export default ($axios, resource) => ({
   signIn(payload) {
-    return $axios.post(`auth/sign-in`, payload);
+    return $axios.post(resource.auth.signin, payload);
   },
 
   signUp(payload) {
-    return $axios.post(`auth/sign-up`, payload);
+    return $axios.post(resource.auth.signup, payload);
   }
 })

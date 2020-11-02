@@ -4,7 +4,16 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const root = {
-  ...envConfig
+  ...envConfig,
+  api: {
+    auth: {
+      signin: 'auth/sign-in',
+      signup: 'auth/sign-up'
+    },
+    user: {
+      info: 'users/me'
+    }
+  }
 }
 
 export default root;
