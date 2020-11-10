@@ -1,61 +1,64 @@
-.splash-container {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  height: calc(100vh - 98px);
-}
+.home-page {
+  &__container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: calc(100vh - 98px);
+  }
 
-.splash-content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  text-align: center;
-}
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
 
-.splash-header-container>h2,
-.splash-info-container>p {
-  margin-top: 30px;
-  color: #1d2d35;
-}
+    &__header>h2,
+    &__info>p {
+      margin-top: 30px;
+      color: $text-color;
+    }
 
-.splash-header-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  z-index: 2;
-}
+    &__header,
+    &__info {
+      display: flex;
+      justify-content: center;
+    }
 
-.splash-header-container {
-  >h2 {
-    font-size: 72px;
-    line-height: 80px;
-    font-weight: bold;
+    // Header section
+    &__header {
+      width: 100%;
+      z-index: 2;
+
+      >h2 {
+        font-size: 72px;
+        line-height: 80px;
+        font-weight: bold;
+      }
+    }
+
+    // Info section
+    &__info {
+      >p {
+        line-height: 35px;
+        margin-bottom: 45px;
+        font-size: 23px;
+        width: 80%;
+      }
+    }
+
+    // Signup section
+    &__signup {
+      width: 400px;
+    }
+
+    &__user-count {
+      margin-top: 25px;
+      font-size: 90%;
+    }
   }
 }
 
 .bold-p {
   background-color: transparent;
-}
-
-.splash-info-container {
-  display: flex;
-  justify-content: center;
-}
-
-.splash-info-container>p {
-  line-height: 35px;
-  margin-bottom: 45px;
-  font-size: 23px;
-  width: 80%;
-}
-
-
-.signup {
-  width: 400px;
-}
-
-.user-count {
-  margin-top: 25px;
-  font-size: 90%;
 }
