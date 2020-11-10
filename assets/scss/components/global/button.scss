@@ -1,0 +1,54 @@
+.main-button {
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px 10px 15px;
+  border: 2px solid $border-color;
+  margin: auto;
+}
+
+.dark-button {
+  background-color: $border-color;
+  color: white;
+
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+}
+
+.outline-button {
+  color: $text-color;
+
+  &:hover {}
+
+  &:focus {}
+
+  &:active {}
+}
+
+.primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $text-color;
+  font-weight: bold;
+  padding: 10px 60px 10px 60px;
+  font-size: 20px;
+
+  &:hover {
+    background-color: $black;
+    color: $primary-color;
+    border-color: $black;
+  }
+}
+
+// For button inline or group
+.inline-left {
+  margin-left: 10px;
+}
+
+.inline-right {
+  margin-right: 10px;
+}

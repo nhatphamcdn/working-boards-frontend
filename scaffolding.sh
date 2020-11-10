@@ -1,10 +1,36 @@
 #!/bin/bash
 
 PS3='Please enter your option: '
-options=("page" "api" "cancel")
+options=("page" "component" "api" "cancel")
 select opt in "${options[@]}"
 do
     case $opt in
+        "component")
+            option='component'
+            
+            echo "Component name:"
+            read name
+            
+            echo "Component path:"
+            read path
+
+            if [ -z path ]; then
+              echo "Path default is ./components/..."
+            fi
+
+            DIR="./components/$path"
+
+            if [ ! -d "$DIR" ]; then
+              echo "mkdir ${DIR}..."
+              mkdir DIR
+            fi
+
+            # Create page
+            echo "Creating component $name..."
+            cp -R ./scaffolding/page ./components/$path/$name
+            echo "Created component $name success."
+            break
+            ;;
         "page")
             option='page'
 

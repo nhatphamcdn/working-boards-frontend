@@ -23,9 +23,14 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-    '@/assets/scss/autoload.scss',
-    '@/assets/scss/base.scss',
+  css: [{
+      src: '@/assets/scss/autoload.scss',
+      lang: 'scss'
+    },
+    {
+      src: '@/assets/scss/base.scss',
+      lang: 'scss'
+    },
   ],
   router: {},
 
@@ -33,6 +38,7 @@ export default {
   plugins: [
     '~/plugins/inject',
     '~/plugins/axios',
+    '~/plugins/global-components',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -43,18 +49,15 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/style-resources'
   ],
-
-  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {
-    baseURL: 'http://localhost:3030/api',
-    withCredentials: true
-  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  styleResources: {
+    scss: ['@/assets/scss/autoload.scss']
+  },
 }

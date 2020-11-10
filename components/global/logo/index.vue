@@ -2,12 +2,7 @@
 
 <script>
 export default {
-  layout: "auth",
-  methods: {
-    test() {
-      alert(123);
-    },
-  },
+  name: "Logo",
 };
 </script>
 

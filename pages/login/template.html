@@ -1,3 +1,23 @@
-<div class="auth">
-  <h1>Login page</h1>
+<div class="login">
+  <h2 class="login-heading">Log In to WorkingBoards</h2>
+  <form class="login-form">
+    <div class="form-input-container" @click="test" @blur="test">
+      <label for="email" class="filled form-label">Your email
+      </label>
+      <input id="email" class="input-form" required type="text" />
+    </div>
+    <div class="form-input-container">
+      <label for="input-form" class="form-label">Your password
+      </label>
+      <input id="password" class="input-form" required type="password" />
+    </div>
+    <div class="form-submit-container">
+      <main-button>Log In</main-button>
+    </div>
+    <div class="switch-form-link-wrapper">
+      <nuxt-link class="switch-session-form-link" :to="{ name: 'register' }">
+        Oops, I meant to Register
+      </nuxt-link>
+    </div>
+  </form>
 </div>

@@ -1,14 +1,7 @@
 <template src="./template.html"></template>
 
 <script>
-export default {
-  layout: "auth",
-  methods: {
-    test() {
-      alert(123);
-    },
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped src="./style.scss"></style>
