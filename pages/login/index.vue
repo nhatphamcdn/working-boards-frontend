@@ -3,11 +3,8 @@
 <script>
 export default {
   layout: "auth",
-  methods: {
-    test() {
-      alert(123);
-    },
-  },
+  name: "Login",
+  methods: {},
 };
 </script>
 

@@ -6,6 +6,7 @@
   padding: 10px 15px 10px 15px;
   border: 2px solid $border-default;
   margin: auto;
+  cursor: pointer;
 
   &__primary {
     background-color: $primary-color;
@@ -43,6 +44,14 @@
     &:active {}
   }
 
+  &__full-width {
+    display: block;
+    width: 100%;
+  }
+
+  &__rounded {
+    border-radius: 4px;
+  }
 
   // For button inline or group
   &__inline-left {

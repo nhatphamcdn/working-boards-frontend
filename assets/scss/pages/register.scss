@@ -1,0 +1,11 @@
+@import '@/assets/scss/modules/auth/form';
+
+@include auth('register');
+
+.register {
+  &__instructions {
+    font-size: 14px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+}
