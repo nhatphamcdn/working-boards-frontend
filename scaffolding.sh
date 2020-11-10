@@ -29,6 +29,16 @@ do
             echo "Creating component $name..."
             cp -R ./scaffolding/page ./components/$path/$name
             echo "Created component $name success."
+
+            echo "Creating scss $name..."
+            FILE=./assets/scss/components/$path/$name.scss
+            if [ -f "$FILE" ]; then
+              echo "$FILE exists."
+              exit 1 
+            fi
+            touch FILE
+            echo "Created scss $name success."
+
             break
             ;;
         "page")
