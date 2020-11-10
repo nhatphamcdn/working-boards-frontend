@@ -11,6 +11,9 @@ export default {
       "Sign Up for WorkingBoards Personal"
     );
   },
+  beforeDestroy() {
+    this.$parent.$parent.setExternalHeading(null);
+  },
 };
 </script>
 
