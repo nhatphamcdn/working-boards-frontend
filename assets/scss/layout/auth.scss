@@ -36,3 +36,22 @@
     padding: 24px;
   }
 }
+
+
+@media screen and (max-width: $small) {
+  .auth-container {
+    &__external-heading {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 21px;
+        text-align: center;
+      }
+    }
+
+    &__body {
+      min-width: auto;
+      max-width: calc(100% - 30px);
+    }
+  }
+}
