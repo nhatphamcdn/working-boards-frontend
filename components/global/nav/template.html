@@ -1,0 +1,17 @@
+<div class="nav-container">
+  <div class="nav-left">
+    <nuxt-link to="/" class="nav-logo-link">
+      <div class="nav-logo-img-container">
+        <Logo class="nav-logo-img" />
+      </div>
+      <h1 class="nav-logo-title">Workingboards</h1>
+    </nuxt-link>
+  </div>
+  <div class="nav-right">
+    <div class="nav-links">
+      <main-button :to="{ name: 'login' }" class="main-button__outline">Sign In</main-button>
+      <main-button :to="{ name: 'register' }" class="main-button__dark main-button__inline-left">Try it NOW
+      </main-button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="form-input__container">
+  <label :for="name" class="form-input__label" :class="{'filled': filled}" v-if="label">{{ label }}
+  </label>
+  <textarea v-if="type === 'textarea'" :id="name" class="form-input__self" cols="30" rows="10" @focus="filled=!filled"
+    @blur="filled=!filled"></textarea>
+  <input v-else :id="name" class="form-input__self" :type="type" @focus="filled=!filled" @blur="filled=!filled" />
+</div>

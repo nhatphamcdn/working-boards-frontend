@@ -2,9 +2,7 @@
 
 <script>
 export default {
-  layout: "auth",
-  name: "Login",
-  methods: {},
+  name: "Nav",
 };
 </script>
 

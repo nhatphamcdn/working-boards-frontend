@@ -1,0 +1,25 @@
+@mixin auth($className: 'login') {
+  .#{$className} {
+    width: 100%;
+
+    &__heading {
+      text-align: center;
+      padding: 0 20px 25px 20px;
+      margin: auto;
+      background-color: white;
+      font-size: 21px;
+    }
+
+    &__form {
+      &__submit {
+        margin-top: 25px;
+      }
+
+      &__switch-link {
+        margin-top: 15px;
+        text-align: center;
+        text-decoration: underline;
+      }
+    }
+  }
+}

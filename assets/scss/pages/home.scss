@@ -1,11 +1,64 @@
 .home-page {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  &__container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: calc(100vh - 98px);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+
+    &__header>h2,
+    &__info>p {
+      margin-top: 30px;
+      color: $text-color;
+    }
+
+    &__header,
+    &__info {
+      display: flex;
+      justify-content: center;
+    }
+
+    // Header section
+    &__header {
+      width: 100%;
+      z-index: 2;
+
+      >h2 {
+        font-size: 72px;
+        line-height: 80px;
+        font-weight: bold;
+      }
+    }
+
+    // Info section
+    &__info {
+      >p {
+        line-height: 35px;
+        margin-bottom: 45px;
+        font-size: 23px;
+        width: 80%;
+      }
+    }
+
+    // Signup section
+    &__signup {
+      width: 400px;
+    }
+
+    &__user-count {
+      margin-top: 25px;
+      font-size: 90%;
+    }
+  }
 }
 
-h1 {
-  font-size: 56px;
+.bold-p {
+  background-color: transparent;
 }

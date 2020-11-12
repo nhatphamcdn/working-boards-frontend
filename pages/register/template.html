@@ -1,0 +1,19 @@
+<div class="register">
+  <h3 class="register__instructions">Type your name & email address to begin</h3>
+  <form class="register__form">
+    <main-input label="Your name" name="name" />
+    <main-input label="Your email" name="email" />
+    <main-input label="Your password" name="password" type="password" />
+    <main-input label="Confirm password" name="confirm_password" type="password" />
+
+    <div class="register__form__submit">
+      <main-button class="main-button__primary main-button__full-width main-button__rounded">Sign Up
+      </main-button>
+    </div>
+    <div class="register__form__switch-link">
+      <nuxt-link class="switch-session-form-link" :to="{ name: 'login' }">
+        Oops, I meant to Log In
+      </nuxt-link>
+    </div>
+  </form>
+</div>

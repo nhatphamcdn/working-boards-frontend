@@ -1,3 +1,23 @@
 <div class="home-page">
-  <h1>Landing page!</h1>
+  <div class="home-page__container">
+    <div class="home-page__content">
+      <!-- Header section -->
+      <div class="home-page__content__header">
+        <h2>Get it together and manage projects the right way.</h2>
+      </div>
+      <!-- Info section -->
+      <div class="home-page__content__info">
+        <p class=""><b class="bold-p">Before SpringBoard:</b> Projects feel scattered, things slip, it’s tough
+          to see where things stand, and people are stressed. <b class="bold-p">After SpringBoard:</b> Everything’s
+          organized in one place, you’re on top of things, progress is clear, and a sense of calm sets in.</p>
+      </div>
+      <!-- Signup section -->
+      <div class="home-page__content__signup">
+        <div class="home-page__content__button">
+          <main-button :to="{ name: 'login' }" class="main-button__primary">Give Workingboards a Try</main-button>
+        </div>
+        <p class="home-page__content__user-count">1.0042 trillion companies swear by this sweet suite.</p>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,64 @@
+.main-button {
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px 10px 15px;
+  border: 2px solid $border-default;
+  margin: auto;
+  cursor: pointer;
+
+  &__primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $text-color;
+    font-weight: bold;
+    padding: 10px 60px 10px 60px;
+    font-size: 20px;
+
+    &:hover {
+      background-color: $black;
+      color: $primary-color;
+      border-color: $black;
+    }
+  }
+
+  &__dark {
+    background-color: $dark-border;
+    color: white;
+
+    &:hover {}
+
+    &:focus {}
+
+    &:active {}
+  }
+
+  &__outline {
+    color: $text-color;
+
+    &:hover {}
+
+    &:focus {}
+
+    &:active {}
+  }
+
+  &__full-width {
+    display: block;
+    width: 100%;
+  }
+
+  &__rounded {
+    border-radius: 4px;
+  }
+
+  // For button inline or group
+  &__inline-left {
+    margin-left: 10px;
+  }
+
+  &__inline-right {
+    margin-right: 10px;
+  }
+}

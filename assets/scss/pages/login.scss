@@ -1,0 +1,32 @@
+@import '@/assets/scss/modules/auth/form';
+
+@include auth('login');
+
+.login {
+  &__form {
+    &__switch-link {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+@media screen and (max-width: $small) {
+  .login {
+    &__form {
+      &__switch-link {
+        flex-wrap: wrap-reverse;
+
+        .switch-session-form-link {
+          flex: 0 0 100%;
+          margin-bottom: 15px;
+
+          &:first-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
