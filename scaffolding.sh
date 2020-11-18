@@ -73,6 +73,15 @@ do
             touch ./assets/scss/pages/$name.scss
             echo "@import '@/assets/scss/pages/$name';" >> ./pages/$name/style.scss
             echo "Created scss $name success."
+
+            search="__name__"
+
+            replace=`echo "$name" | perl -pe 's/(^|_| |-)./uc($&)/ge;s/ |-|_//g'`
+            
+            find ./pages/$name -type f -exec sed -i '' -e "s/$search/$replace/" {} \;
+
+            break
+            ;;
             break
             ;;
         "api")
