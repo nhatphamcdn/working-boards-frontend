@@ -18,7 +18,7 @@ do
               echo "Path default is ./components/..."
             fi
 
-            DIR="./components/$path"
+            DIR="./components$path"
 
             if [ ! -d "$DIR" ]; then
               echo "mkdir ${DIR}..."
@@ -38,6 +38,12 @@ do
             fi
             touch FILE
             echo "Created scss $name success."
+
+            search="__name__"
+
+            replace=`echo "$name" | perl -pe 's/(^|_| |-)./uc($&)/ge;s/ |-|_//g'`
+            
+            find $DIR/$name -type f -exec sed -i '' -e "s/$search/$replace/" {} \;
 
             break
             ;;
